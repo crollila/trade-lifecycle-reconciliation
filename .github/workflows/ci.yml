@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check src tests
+      - name: Tests
+        run: python -m pytest -q
+      - name: Reproduce every result from scratch
+        run: python -m tlr all
+      - name: Results and docs must be unchanged (deterministic run)
+        run: |
+          python -m tlr check-docs
+          git diff --stat --exit-code -- results/results.json results/incidents_baseline.csv results/exception_queue.csv README.md SQL_EXAMPLES.md

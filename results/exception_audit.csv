@@ -1,0 +1,351 @@
+exc_id,seq,event_ts,actor,action,from_status,to_status,note
+EXC-00001,1,2026-03-02 15:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 700.0000; actual qty 600.0000
+EXC-00001,2,2026-03-02 16:07:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00001,3,2026-03-02 16:19:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00001,4,2026-03-02 16:24:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00002,1,2026-03-02 17:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 3000000.0000; actual qty 4500000.0000
+EXC-00002,2,2026-03-02 17:26:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00002,3,2026-03-02 18:12:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00002,4,2026-03-02 18:15:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00003,1,2026-03-02 17:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 30.80 (schedule); actual billed 49.28
+EXC-00003,2,2026-03-02 18:51:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00003,3,2026-03-02 19:13:00,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00003,4,2026-03-04 16:45:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00004,1,2026-03-02 18:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 41.60000000; actual price 41.96000000
+EXC-00004,2,2026-03-02 18:43:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00004,3,2026-03-02 19:32:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00004,4,2026-03-02 19:37:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00005,1,2026-03-02 19:00:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 4.90 (schedule); actual billed 7.84
+EXC-00005,2,2026-03-02 21:19:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00005,3,2026-03-02 21:59:00,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00005,4,2026-03-05 16:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00006,1,2026-03-02 21:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 0.35 (schedule); actual billed 0.60
+EXC-00006,2,2026-03-03 13:09:25,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00006,3,2026-03-03 13:30:25,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00006,4,2026-03-09 16:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00007,1,2026-03-02 22:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 3.20 (schedule); actual billed 5.12
+EXC-00007,2,2026-03-02 23:21:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00007,3,2026-03-03 13:33:43,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00007,4,2026-03-09 16:00:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00008,1,2026-03-03 02:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-02; actual not received
+EXC-00008,2,2026-03-03 13:36:39,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00008,3,2026-03-03 14:08:39,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00008,4,2026-03-04 02:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00009,1,2026-03-03 02:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-02; actual not received
+EXC-00009,2,2026-03-03 13:20:27,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00009,3,2026-03-03 14:13:27,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00009,4,2026-03-04 02:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00010,1,2026-03-03 02:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-02; actual not received
+EXC-00010,2,2026-03-03 13:24:52,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00010,3,2026-03-03 14:06:52,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00010,4,2026-03-04 02:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00011,1,2026-03-03 17:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill MRX0000433; actual second fill MRX0000433-R with identical qty/price/time
+EXC-00011,2,2026-03-03 18:01:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00011,3,2026-03-03 18:29:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00011,4,2026-03-03 18:30:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00012,1,2026-03-03 17:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 100.0000 @ 68.93000000 (venue); actual no internal fill
+EXC-00012,2,2026-03-03 18:15:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00012,3,2026-03-03 19:10:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00012,4,2026-03-03 19:15:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00013,1,2026-03-03 19:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 3800.0000; actual qty 3100.0000
+EXC-00013,2,2026-03-03 19:25:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00013,3,2026-03-03 19:55:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00013,4,2026-03-03 20:00:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00014,1,2026-03-03 19:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill AXF0000673; actual second fill AXF0000673-R with identical qty/price/time
+EXC-00014,2,2026-03-03 19:53:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00014,3,2026-03-03 20:05:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00014,4,2026-03-03 20:10:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00015,1,2026-03-03 22:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 27.0000; actual qty 23.0000
+EXC-00015,2,2026-03-03 23:04:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00015,3,2026-03-04 13:42:23,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00015,4,2026-03-04 13:47:23,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00016,1,2026-03-03 22:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 5033.75000000; actual price 5039.50000000
+EXC-00016,2,2026-03-03 23:02:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00016,3,2026-03-04 13:29:05,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00016,4,2026-03-04 13:34:05,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00017,1,2026-03-04 00:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,WRONG_ACCOUNT_ALLOCATION: expected 2260 in FUND-C; actual booked to FUND-A
+EXC-00017,2,2026-03-04 13:04:18,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00017,3,2026-03-04 13:38:18,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Instructed custodian journal to the correct account
+EXC-00017,4,2026-03-05 00:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00018,1,2026-03-04 15:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 12.54000000; actual price 12.83000000
+EXC-00018,2,2026-03-04 15:31:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00018,3,2026-03-04 16:41:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00018,4,2026-03-04 16:45:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00019,1,2026-03-04 16:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 5000000.0000; actual qty 50000000.0000
+EXC-00019,2,2026-03-04 16:38:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00019,3,2026-03-04 17:14:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00019,4,2026-03-04 17:15:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00020,1,2026-03-04 17:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 500.0000; actual qty 1300.0000
+EXC-00020,2,2026-03-04 17:39:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00020,3,2026-03-04 17:56:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00020,4,2026-03-04 18:00:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00021,1,2026-03-04 18:00:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 700.0000 @ 68.45000000 (venue); actual no internal fill
+EXC-00021,2,2026-03-04 18:16:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00021,3,2026-03-04 18:34:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00021,4,2026-03-04 18:39:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00022,1,2026-03-04 20:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 2500.0000; actual qty 2000.0000
+EXC-00022,2,2026-03-04 21:21:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00022,3,2026-03-04 21:40:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00022,4,2026-03-04 21:45:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00023,1,2026-03-04 20:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 2200.0000 @ 55.46000000 (venue); actual no internal fill
+EXC-00023,2,2026-03-04 21:24:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00023,3,2026-03-04 22:45:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00023,4,2026-03-04 22:50:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00024,1,2026-03-04 22:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill MRX0000817; actual second fill MRX0000817-R with identical qty/price/time
+EXC-00024,2,2026-03-04 23:17:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00024,3,2026-03-05 13:07:15,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00024,4,2026-03-05 13:12:15,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00025,1,2026-03-04 22:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 1400.0000 @ 12.51000000 (venue); actual no internal fill
+EXC-00025,2,2026-03-04 23:07:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00025,3,2026-03-05 13:23:32,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00025,4,2026-03-05 13:28:32,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00026,1,2026-03-05 00:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FAILED_SETTLEMENT: expected settled on 2026-03-04; actual FAILED (LACK)
+EXC-00026,2,2026-03-05 13:39:49,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00026,3,2026-03-05 14:04:49,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty on fail; monitoring for settlement
+EXC-00026,4,2026-03-06 00:30:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00027,1,2026-03-05 00:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,WRONG_ACCOUNT_ALLOCATION: expected 9000 in FUND-B; actual booked to FUND-C
+EXC-00027,2,2026-03-05 13:32:31,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00027,3,2026-03-05 14:44:31,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Instructed custodian journal to the correct account
+EXC-00027,4,2026-03-06 00:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00028,1,2026-03-05 00:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,WRONG_ACCOUNT_ALLOCATION: expected 4410 in FUND-B; actual booked to FUND-C
+EXC-00028,2,2026-03-05 13:18:32,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00028,3,2026-03-05 13:39:32,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Instructed custodian journal to the correct account
+EXC-00028,4,2026-03-06 00:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00029,1,2026-03-05 02:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-04; actual not received
+EXC-00029,2,2026-03-05 13:01:30,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00029,3,2026-03-05 14:23:30,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00029,4,2026-03-07 02:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00030,1,2026-03-05 16:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill AXF0001195; actual second fill AXF0001195-R with identical qty/price/time
+EXC-00030,2,2026-03-05 17:25:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00030,3,2026-03-05 17:38:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00030,4,2026-03-05 17:43:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00031,1,2026-03-05 17:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill AXF0001384; actual second fill AXF0001384-R with identical qty/price/time
+EXC-00031,2,2026-03-05 18:07:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00031,3,2026-03-05 18:53:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00031,4,2026-03-05 18:58:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00032,1,2026-03-05 18:00:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 3500.0000 @ 55.76000000 (venue); actual no internal fill
+EXC-00032,2,2026-03-05 18:13:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00032,3,2026-03-05 18:53:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00032,4,2026-03-05 18:58:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00033,1,2026-03-05 21:00:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 1200.0000 @ 24.03000000 (venue); actual no internal fill
+EXC-00033,2,2026-03-05 21:43:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00033,3,2026-03-05 22:26:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00033,4,2026-03-05 22:31:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00034,1,2026-03-05 22:31:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 16.0000 @ 110.64062500 (venue); actual no internal fill
+EXC-00034,2,2026-03-05 23:09:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00034,3,2026-03-06 13:36:25,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00034,4,2026-03-06 13:41:25,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00035,1,2026-03-05 22:31:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill MRX0001232; actual second fill MRX0001232-R with identical qty/price/time
+EXC-00035,2,2026-03-05 23:12:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00035,3,2026-03-06 13:11:43,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00035,4,2026-03-06 13:16:43,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00036,1,2026-03-06 00:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,STALE_POSITION: expected statement as of 2026-03-05; actual statement as of 2026-03-04
+EXC-00036,2,2026-03-06 13:42:53,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00036,3,2026-03-06 14:55:53,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Requested statement re-send from custodian
+EXC-00036,4,2026-03-06 16:10:53,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00037,1,2026-03-06 00:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,WRONG_ACCOUNT_ALLOCATION: expected 3300 in FUND-A; actual booked to FUND-C
+EXC-00037,2,2026-03-06 13:25:03,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00037,3,2026-03-06 13:56:03,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Instructed custodian journal to the correct account
+EXC-00037,4,2026-03-07 00:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00038,1,2026-03-06 02:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-05; actual not received
+EXC-00038,2,2026-03-06 13:43:17,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00038,3,2026-03-06 14:47:17,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00038,4,2026-03-10 01:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00039,1,2026-03-06 16:10:53,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 99.75500000; actual price 99.75900000
+EXC-00039,2,2026-03-06 16:28:53,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00039,3,2026-03-06 17:46:53,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00039,4,2026-03-06 17:51:53,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00040,1,2026-03-06 19:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 2.80 (schedule); actual billed 4.48
+EXC-00040,2,2026-03-06 21:53:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00040,3,2026-03-06 22:47:00,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00040,4,2026-03-12 16:00:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00041,1,2026-03-06 20:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 2900.0000 @ 301.65000000 (venue); actual no internal fill
+EXC-00041,2,2026-03-06 20:24:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00041,3,2026-03-06 20:57:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00041,4,2026-03-06 21:00:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00042,1,2026-03-06 22:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 4900.25000000; actual price 4904.50000000
+EXC-00042,2,2026-03-06 23:10:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00042,3,2026-03-09 12:32:39,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00042,4,2026-03-09 12:37:39,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00043,1,2026-03-07 00:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,UNEXPECTED_POSITION: expected no position; actual custodian holds 25000
+EXC-00043,2,2026-03-09 12:17:41,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00043,3,2026-03-09 13:47:41,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Raised investigation with custodian; requested reversal of misbooking
+EXC-00043,4,2026-03-10 23:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00044,1,2026-03-07 00:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,UNEXPECTED_POSITION: expected no position; actual custodian holds 2000000
+EXC-00044,2,2026-03-09 12:41:35,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00044,3,2026-03-09 13:04:35,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Raised investigation with custodian; requested reversal of misbooking
+EXC-00044,4,2026-03-10 23:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00045,1,2026-03-07 00:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,UNEXPECTED_POSITION: expected no position; actual custodian holds 2000000
+EXC-00045,2,2026-03-09 12:29:08,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00045,3,2026-03-09 14:26:08,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Raised investigation with custodian; requested reversal of misbooking
+EXC-00045,4,2026-03-10 23:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00046,1,2026-03-07 02:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-06; actual not received
+EXC-00046,2,2026-03-09 12:33:27,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00046,3,2026-03-09 14:31:27,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00046,4,2026-03-10 01:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00047,1,2026-03-07 02:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-06; actual not received
+EXC-00047,2,2026-03-09 12:24:26,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00047,3,2026-03-09 13:01:26,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00047,4,2026-03-10 01:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00048,1,2026-03-07 02:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-06; actual not received
+EXC-00048,2,2026-03-09 12:02:02,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00048,3,2026-03-09 13:16:02,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00048,4,2026-03-10 01:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00049,1,2026-03-09 16:00:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 41.17 (schedule); actual billed 65.87
+EXC-00049,2,2026-03-09 18:48:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00049,3,2026-03-09 19:19:00,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00049,4,2026-03-12 16:00:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00050,1,2026-03-09 16:00:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 2.10 (schedule); actual billed 3.36
+EXC-00050,2,2026-03-09 17:00:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00050,3,2026-03-09 17:52:00,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00050,4,2026-03-13 16:15:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00051,1,2026-03-09 19:00:00,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 87.44000000; actual price 87.51000000
+EXC-00051,2,2026-03-09 19:28:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00051,3,2026-03-09 19:58:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00051,4,2026-03-09 20:00:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00052,1,2026-03-09 19:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill AXF0001806; actual second fill AXF0001806-R with identical qty/price/time
+EXC-00052,2,2026-03-09 19:35:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00052,3,2026-03-09 21:00:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00052,4,2026-03-09 21:05:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00053,1,2026-03-09 21:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 1300.0000; actual qty 1100.0000
+EXC-00053,2,2026-03-09 22:20:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00053,3,2026-03-10 12:44:17,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00053,4,2026-03-10 12:49:17,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00054,1,2026-03-09 21:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill MRX0001764; actual second fill MRX0001764-R with identical qty/price/time
+EXC-00054,2,2026-03-09 21:55:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00054,3,2026-03-09 22:09:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00054,4,2026-03-09 22:14:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00055,1,2026-03-09 21:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 23.66000000; actual price 23.61000000
+EXC-00055,2,2026-03-09 21:54:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00055,3,2026-03-10 12:29:59,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00055,4,2026-03-10 12:34:59,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00056,1,2026-03-09 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,STALE_POSITION: expected statement as of 2026-03-09; actual statement as of 2026-03-06
+EXC-00056,2,2026-03-10 12:01:17,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00056,3,2026-03-10 12:45:17,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Requested statement re-send from custodian
+EXC-00056,4,2026-03-10 14:00:17,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00057,1,2026-03-09 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,STALE_POSITION: expected statement as of 2026-03-09; actual statement as of 2026-03-06
+EXC-00057,2,2026-03-10 12:35:25,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00057,3,2026-03-10 13:25:25,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Requested statement re-send from custodian
+EXC-00057,4,2026-03-10 14:00:17,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00058,1,2026-03-09 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,WRONG_ACCOUNT_ALLOCATION: expected 1120 in FUND-C; actual booked to FUND-A
+EXC-00058,2,2026-03-10 12:16:40,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00058,3,2026-03-10 12:56:40,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Instructed custodian journal to the correct account
+EXC-00058,4,2026-03-10 23:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00059,1,2026-03-10 14:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 1200.0000 @ 57.92000000 (venue); actual no internal fill
+EXC-00059,2,2026-03-10 14:51:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00059,3,2026-03-10 16:07:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00059,4,2026-03-10 16:12:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00060,1,2026-03-10 14:40:25,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 66.98000000; actual price 67.26000000
+EXC-00060,2,2026-03-10 14:51:25,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00060,3,2026-03-10 15:38:25,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00060,4,2026-03-10 15:43:25,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00061,1,2026-03-10 21:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 44.0000; actual qty 46.0000
+EXC-00061,2,2026-03-10 21:56:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00061,3,2026-03-11 12:13:45,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00061,4,2026-03-11 12:18:45,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00062,1,2026-03-10 21:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill MRX0002134; actual second fill MRX0002134-R with identical qty/price/time
+EXC-00062,2,2026-03-10 21:56:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00062,3,2026-03-11 12:00:26,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00062,4,2026-03-11 12:05:26,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00063,1,2026-03-10 21:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 107.03125000; actual price 106.67187500
+EXC-00063,2,2026-03-10 22:17:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00063,3,2026-03-11 12:42:10,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00063,4,2026-03-11 12:47:10,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00064,1,2026-03-10 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FAILED_SETTLEMENT: expected settled on 2026-03-10; actual FAILED (LACK)
+EXC-00064,2,2026-03-11 12:37:23,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00064,3,2026-03-11 14:28:23,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty on fail; monitoring for settlement
+EXC-00064,4,2026-03-12 23:30:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00065,1,2026-03-10 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FAILED_SETTLEMENT: expected settled on 2026-03-10; actual FAILED (LACK)
+EXC-00065,2,2026-03-11 12:21:21,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00065,3,2026-03-11 13:15:21,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty on fail; monitoring for settlement
+EXC-00065,4,2026-03-11 23:30:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00066,1,2026-03-10 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FAILED_SETTLEMENT: expected settled on 2026-03-10; actual FAILED (LACK)
+EXC-00066,2,2026-03-11 12:22:00,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00066,3,2026-03-11 13:27:00,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty on fail; monitoring for settlement
+EXC-00066,4,2026-03-11 23:30:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00067,1,2026-03-10 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FAILED_SETTLEMENT: expected settled on 2026-03-10; actual FAILED (LACK)
+EXC-00067,2,2026-03-11 12:31:37,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00067,3,2026-03-11 13:57:37,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty on fail; monitoring for settlement
+EXC-00067,4,2026-03-12 23:30:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00068,1,2026-03-10 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,UNEXPECTED_POSITION: expected no position; actual custodian holds 25000
+EXC-00068,2,2026-03-11 12:02:00,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00068,3,2026-03-11 13:51:00,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Raised investigation with custodian; requested reversal of misbooking
+EXC-00068,4,2026-03-12 23:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00069,1,2026-03-10 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,UNEXPECTED_POSITION: expected no position; actual custodian holds 2000000
+EXC-00069,2,2026-03-11 12:22:37,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00069,3,2026-03-11 13:47:37,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Raised investigation with custodian; requested reversal of misbooking
+EXC-00069,4,2026-03-12 23:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00070,1,2026-03-11 14:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 113.59 (schedule); actual billed 181.74
+EXC-00070,2,2026-03-11 16:02:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00070,3,2026-03-11 16:45:00,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00070,4,2026-03-16 23:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00071,1,2026-03-11 15:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 8.05 (schedule); actual billed 12.88
+EXC-00071,2,2026-03-11 17:15:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00071,3,2026-03-11 17:49:00,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00071,4,2026-03-16 23:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00072,1,2026-03-11 15:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 15.53 (schedule); actual billed 24.85
+EXC-00072,2,2026-03-11 17:27:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00072,3,2026-03-11 18:27:00,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00072,4,2026-03-13 16:00:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00073,1,2026-03-11 16:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,DUPLICATE_FILL: expected single fill MRX0002490; actual second fill MRX0002490-R with identical qty/price/time
+EXC-00073,2,2026-03-11 17:14:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00073,3,2026-03-11 18:08:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Busted duplicate fill; venue record kept
+EXC-00073,4,2026-03-11 18:13:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00074,1,2026-03-11 21:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 12.50 (schedule); actual billed 20.00
+EXC-00074,2,2026-03-11 22:17:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00074,3,2026-03-12 12:27:39,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00075,1,2026-03-11 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FAILED_SETTLEMENT: expected settled on 2026-03-11; actual FAILED (LACK)
+EXC-00075,2,2026-03-12 12:28:19,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00075,3,2026-03-12 13:54:19,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty on fail; monitoring for settlement
+EXC-00075,4,2026-03-13 23:30:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00076,1,2026-03-11 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FAILED_SETTLEMENT: expected settled on 2026-03-11; actual FAILED (LACK)
+EXC-00076,2,2026-03-12 12:30:47,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00076,3,2026-03-12 13:47:47,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty on fail; monitoring for settlement
+EXC-00076,4,2026-03-13 23:30:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00077,1,2026-03-11 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,STALE_POSITION: expected statement as of 2026-03-11; actual statement as of 2026-03-10
+EXC-00077,2,2026-03-12 12:39:14,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00077,3,2026-03-12 14:05:14,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Requested statement re-send from custodian
+EXC-00077,4,2026-03-12 15:20:14,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00078,1,2026-03-12 17:00:00,RECON_ENGINE,CREATED,OPEN,OPEN,QUANTITY_MISMATCH: expected qty 2200.0000; actual qty 1800.0000
+EXC-00078,2,2026-03-12 17:05:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00078,3,2026-03-12 17:29:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill quantity to venue-confirmed quantity
+EXC-00078,4,2026-03-12 17:30:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00079,1,2026-03-12 18:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,PRICE_MISMATCH: expected price 38.76000000; actual price 38.41000000
+EXC-00079,2,2026-03-12 18:39:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00079,3,2026-03-12 20:07:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Corrected internal fill price to venue-confirmed price
+EXC-00079,4,2026-03-12 20:12:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00080,1,2026-03-12 18:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 9500.0000 @ 23.19000000 (venue); actual no internal fill
+EXC-00080,2,2026-03-12 19:05:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00080,3,2026-03-12 19:20:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00080,4,2026-03-12 19:25:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00081,1,2026-03-12 20:12:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 4500000.0000 @ 99.44050000 (venue); actual no internal fill
+EXC-00081,2,2026-03-12 20:57:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00081,3,2026-03-12 22:11:00,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00081,4,2026-03-12 22:16:00,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00082,1,2026-03-12 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,FAILED_SETTLEMENT: expected settled on 2026-03-12; actual FAILED (LACK)
+EXC-00082,2,2026-03-13 12:14:56,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00082,3,2026-03-13 13:54:56,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty on fail; monitoring for settlement
+EXC-00082,4,2026-03-16 23:30:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00083,1,2026-03-12 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,STALE_POSITION: expected statement as of 2026-03-12; actual statement as of 2026-03-11
+EXC-00083,2,2026-03-13 12:21:28,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00083,3,2026-03-13 13:12:28,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Requested statement re-send from custodian
+EXC-00083,4,2026-03-13 14:27:28,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00084,1,2026-03-12 23:30:00,RECON_ENGINE,CREATED,OPEN,OPEN,WRONG_ACCOUNT_ALLOCATION: expected 2910 in FUND-B; actual booked to FUND-C
+EXC-00084,2,2026-03-13 12:41:25,OPS:Position Control,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00084,3,2026-03-13 13:39:25,OPS:Position Control,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Instructed custodian journal to the correct account
+EXC-00084,4,2026-03-13 23:30:00,RECON_ENGINE,VERIFIED_CLEAR,PENDING_EXTERNAL,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00085,1,2026-03-13 17:15:00,RECON_ENGINE,CREATED,OPEN,OPEN,FEE_MISMATCH: expected fee 12.44 (schedule); actual billed 19.90
+EXC-00085,2,2026-03-13 18:53:00,OPS:Middle Office - Fees,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00085,3,2026-03-13 19:50:00,OPS:Middle Office - Fees,REQUESTED_EXTERNAL_FIX,INVESTIGATING,PENDING_EXTERNAL,Disputed off-schedule fee with venue; awaiting fee credit
+EXC-00086,1,2026-03-13 21:45:00,RECON_ENGINE,CREATED,OPEN,OPEN,MISSING_TRADE: expected fill 5.0000 @ 108.01562500 (venue); actual no internal fill
+EXC-00086,2,2026-03-13 22:24:00,OPS:Trade Support,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00086,3,2026-03-16 12:17:28,OPS:Trade Support,FIX_APPLIED,INVESTIGATING,FIX_APPLIED,Booked missing fill from venue drop copy (late booking)
+EXC-00086,4,2026-03-16 12:22:28,RECON_ENGINE,VERIFIED_CLEAR,FIX_APPLIED,RESOLVED,re-run of the reconciliation no longer observes the break
+EXC-00087,1,2026-03-14 01:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-13; actual not received
+EXC-00087,2,2026-03-16 12:34:43,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00087,3,2026-03-16 13:46:43,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00087,4,2026-03-17 01:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break
+EXC-00088,1,2026-03-14 01:05:00,RECON_ENGINE,CREATED,OPEN,OPEN,LATE_CONFIRMATION: expected confirmation by 21:00 on 2026-03-13; actual not received
+EXC-00088,2,2026-03-16 12:13:34,OPS:Settlements,PICKED_UP,OPEN,INVESTIGATING,assigned analyst began investigation
+EXC-00088,3,2026-03-16 13:33:34,OPS:Settlements,CHASED_COUNTERPARTY,INVESTIGATING,INVESTIGATING,Chased counterparty for outstanding confirmation
+EXC-00088,4,2026-03-18 01:05:00,RECON_ENGINE,AUTO_CLEARED,INVESTIGATING,AUTO_CLEARED,re-run of the reconciliation no longer observes the break

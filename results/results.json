@@ -1,0 +1,1101 @@
+{
+  "scenario": {
+    "seed": 20260302,
+    "window": "2026-03-02 to 2026-03-17",
+    "trading_days": 10,
+    "orders_per_day": 320,
+    "fee_schedules": {
+      "ALPHAX": "USD equities $0.0035/share; EUR equities 3.0 bp of notional",
+      "BONDHUB": "USD bonds 0.50 bp of notional; EUR bonds 0.75 bp of notional",
+      "MERIDIAN": "USD equities $0.0040/share; futures $1.25 exchange + $0.40 clearing + $0.85 brokerage per contract"
+    }
+  },
+  "volumes": {
+    "trading_days": 10,
+    "calendar_window": "2026-03-02 to 2026-03-17",
+    "orders": 3200,
+    "rejected_orders": 42,
+    "partially_filled_then_cancelled": 188,
+    "fills": 8003,
+    "orders_with_multiple_fills": 2261,
+    "venue_messages_delivered": 11539,
+    "exact_replays_ignored": 150,
+    "conflicting_messages_quarantined": 0,
+    "allocations": 6256,
+    "booking_versions": 6289,
+    "confirmations": 6256,
+    "statements": 72,
+    "recon_runs": 407
+  },
+  "baseline": {
+    "exceptions_raised": 88,
+    "true_positive_exceptions": 88,
+    "misclassified_exceptions": 0,
+    "false_positives": 0,
+    "precision": 1.0,
+    "incidents_injected": 88,
+    "incidents_detected": 88,
+    "recall": 1.0,
+    "benign_noise_events": 150,
+    "benign_noise_exceptions": 0,
+    "median_detection_latency_min": 30.0,
+    "p90_detection_latency_min": 235.1,
+    "unresolved_at_end": 2,
+    "unresolved_by_type": {
+      "FEE_MISMATCH": 2
+    },
+    "status_counts": {
+      "RESOLVED": 68,
+      "AUTO_CLEARED": 18,
+      "PENDING_EXTERNAL": 2
+    },
+    "by_type": {
+      "MISSING_TRADE": {
+        "injected": 12,
+        "detected": 12,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 12,
+        "median_latency_min": 29.4,
+        "max_latency_min": 304.6,
+        "tp_exceptions": 12
+      },
+      "DUPLICATE_FILL": {
+        "injected": 10,
+        "detected": 10,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 10,
+        "median_latency_min": 114.6,
+        "max_latency_min": 263.6,
+        "tp_exceptions": 10
+      },
+      "QUANTITY_MISMATCH": {
+        "injected": 10,
+        "detected": 10,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 10,
+        "median_latency_min": 28.8,
+        "max_latency_min": 333.1,
+        "tp_exceptions": 10
+      },
+      "PRICE_MISMATCH": {
+        "injected": 10,
+        "detected": 10,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 10,
+        "median_latency_min": 33.7,
+        "max_latency_min": 301.6,
+        "tp_exceptions": 10
+      },
+      "FEE_MISMATCH": {
+        "injected": 12,
+        "detected": 12,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 12,
+        "median_latency_min": 25.7,
+        "max_latency_min": 241.2,
+        "tp_exceptions": 12
+      },
+      "WRONG_ACCOUNT_ALLOCATION": {
+        "injected": 6,
+        "detected": 6,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 6,
+        "median_latency_min": 210.0,
+        "max_latency_min": 210.0,
+        "tp_exceptions": 6
+      },
+      "STALE_POSITION": {
+        "injected": 5,
+        "detected": 5,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 5,
+        "median_latency_min": 60.0,
+        "max_latency_min": 60.0,
+        "tp_exceptions": 5
+      },
+      "FAILED_SETTLEMENT": {
+        "injected": 8,
+        "detected": 8,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 8,
+        "median_latency_min": 203.9,
+        "max_latency_min": 207.7,
+        "tp_exceptions": 8
+      },
+      "LATE_CONFIRMATION": {
+        "injected": 10,
+        "detected": 10,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 10,
+        "median_latency_min": 5.0,
+        "max_latency_min": 5.0,
+        "tp_exceptions": 10
+      },
+      "UNEXPECTED_POSITION": {
+        "injected": 5,
+        "detected": 5,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 5,
+        "median_latency_min": 30.0,
+        "max_latency_min": 60.0,
+        "tp_exceptions": 5
+      },
+      "POSITION_MISMATCH": {
+        "injected": 0,
+        "detected": 0,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 0,
+        "median_latency_min": null,
+        "max_latency_min": null,
+        "tp_exceptions": 0
+      },
+      "CASH_MISMATCH": {
+        "injected": 0,
+        "detected": 0,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 0,
+        "median_latency_min": null,
+        "max_latency_min": null,
+        "tp_exceptions": 0
+      }
+    }
+  },
+  "stress": {
+    "exceptions_raised": 270,
+    "true_positive_exceptions": 254,
+    "misclassified_exceptions": 7,
+    "false_positives": 9,
+    "precision": 0.9407,
+    "incidents_injected": 258,
+    "incidents_detected": 258,
+    "recall": 1.0,
+    "benign_noise_events": 150,
+    "benign_noise_exceptions": 0,
+    "median_detection_latency_min": 29.8,
+    "p90_detection_latency_min": 255.6,
+    "unresolved_at_end": 5,
+    "unresolved_by_type": {
+      "FEE_MISMATCH": 5
+    },
+    "status_counts": {
+      "RESOLVED": 195,
+      "AUTO_CLEARED": 70,
+      "PENDING_EXTERNAL": 5
+    },
+    "by_type": {
+      "MISSING_TRADE": {
+        "injected": 36,
+        "detected": 36,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 36,
+        "median_latency_min": 29.3,
+        "max_latency_min": 333.1,
+        "tp_exceptions": 36
+      },
+      "DUPLICATE_FILL": {
+        "injected": 30,
+        "detected": 30,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 30,
+        "median_latency_min": 25.7,
+        "max_latency_min": 301.6,
+        "tp_exceptions": 30
+      },
+      "QUANTITY_MISMATCH": {
+        "injected": 30,
+        "detected": 30,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 30,
+        "median_latency_min": 25.9,
+        "max_latency_min": 312.8,
+        "tp_exceptions": 30
+      },
+      "PRICE_MISMATCH": {
+        "injected": 30,
+        "detected": 30,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 30,
+        "median_latency_min": 36.6,
+        "max_latency_min": 326.5,
+        "tp_exceptions": 30
+      },
+      "FEE_MISMATCH": {
+        "injected": 36,
+        "detected": 36,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 36,
+        "median_latency_min": 24.9,
+        "max_latency_min": 336.4,
+        "tp_exceptions": 36
+      },
+      "WRONG_ACCOUNT_ALLOCATION": {
+        "injected": 18,
+        "detected": 18,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 15,
+        "median_latency_min": 210.0,
+        "max_latency_min": 3964.2,
+        "tp_exceptions": 15
+      },
+      "STALE_POSITION": {
+        "injected": 15,
+        "detected": 15,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 14,
+        "median_latency_min": 30.0,
+        "max_latency_min": 60.0,
+        "tp_exceptions": 14
+      },
+      "FAILED_SETTLEMENT": {
+        "injected": 24,
+        "detected": 24,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 24,
+        "median_latency_min": 203.5,
+        "max_latency_min": 209.4,
+        "tp_exceptions": 24
+      },
+      "LATE_CONFIRMATION": {
+        "injected": 30,
+        "detected": 30,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 30,
+        "median_latency_min": 5.0,
+        "max_latency_min": 5.0,
+        "tp_exceptions": 30
+      },
+      "UNEXPECTED_POSITION": {
+        "injected": 9,
+        "detected": 9,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 9,
+        "median_latency_min": 60.0,
+        "max_latency_min": 3825.3,
+        "tp_exceptions": 9
+      },
+      "POSITION_MISMATCH": {
+        "injected": 0,
+        "detected": 0,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 0,
+        "raised": 7,
+        "median_latency_min": null,
+        "max_latency_min": null,
+        "tp_exceptions": 0
+      },
+      "CASH_MISMATCH": {
+        "injected": 0,
+        "detected": 0,
+        "misclassified": 0,
+        "missed": 0,
+        "false_positives": 9,
+        "raised": 9,
+        "median_latency_min": null,
+        "max_latency_min": null,
+        "tp_exceptions": 0
+      }
+    }
+  },
+  "recon_disabled": {
+    "exceptions_raised": 0,
+    "end_of_window": {
+      "as_of": "2026-03-17",
+      "position_usd": {
+        "internal_vs_expected_sd": 92469768.62,
+        "internal_vs_expected_td": 92469768.62,
+        "external_vs_expected_sd": 9380739.01,
+        "internal_vs_external_sd": 101406772.35
+      },
+      "position_td_usd_by_location": {
+        "NORTHBRIDGE": 51676736.0,
+        "MERIDIAN": 40793032.62
+      },
+      "cash_usd": {
+        "internal_vs_expected_sd": 53256842.86,
+        "internal_vs_expected_td": 53256842.86,
+        "external_vs_expected_sd": 2338830.78,
+        "internal_vs_external_sd": 53867988.85
+      },
+      "pnl_error_usd": 1107210.24
+    }
+  },
+  "recon_enabled": {
+    "end_of_window": {
+      "as_of": "2026-03-17",
+      "position_usd": {
+        "internal_vs_expected_sd": 0.0,
+        "internal_vs_expected_td": 0.0,
+        "external_vs_expected_sd": 0.0,
+        "internal_vs_external_sd": 0.0
+      },
+      "position_td_usd_by_location": {
+        "NORTHBRIDGE": 0.0,
+        "MERIDIAN": 0.0
+      },
+      "cash_usd": {
+        "internal_vs_expected_sd": 0.0,
+        "internal_vs_expected_td": 0.0,
+        "external_vs_expected_sd": 14.96,
+        "internal_vs_external_sd": 14.96
+      },
+      "pnl_error_usd": 0.0
+    }
+  },
+  "daily_differences": {
+    "recon_off": [
+      {
+        "as_of": "2026-03-02",
+        "position_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 1502320.74,
+          "external_vs_expected_sd": 0.0,
+          "internal_vs_external_sd": 0.0
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 1502320.74,
+          "MERIDIAN": 0.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 1518988.38,
+          "external_vs_expected_sd": 0.0,
+          "internal_vs_external_sd": 0.0
+        },
+        "pnl_error_usd": 3687.58
+      },
+      {
+        "as_of": "2026-03-03",
+        "position_usd": {
+          "internal_vs_expected_sd": 2505092.5,
+          "internal_vs_expected_td": 2754085.14,
+          "external_vs_expected_sd": 56680.8,
+          "internal_vs_external_sd": 2561773.3
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 1716983.14,
+          "MERIDIAN": 1037102.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 1527245.0,
+          "internal_vs_expected_td": 1773436.41,
+          "external_vs_expected_sd": 56404.83,
+          "internal_vs_external_sd": 1583649.83
+        },
+        "pnl_error_usd": 18170.06
+      },
+      {
+        "as_of": "2026-03-04",
+        "position_usd": {
+          "internal_vs_expected_sd": 2745997.28,
+          "internal_vs_expected_td": 48010899.42,
+          "external_vs_expected_sd": 2582444.06,
+          "internal_vs_external_sd": 5287351.34
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 46960770.42,
+          "MERIDIAN": 1050129.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 1787136.41,
+          "internal_vs_expected_td": 47400144.27,
+          "external_vs_expected_sd": 2513684.79,
+          "internal_vs_external_sd": 2450327.1
+        },
+        "pnl_error_usd": 172237.55
+      },
+      {
+        "as_of": "2026-03-05",
+        "position_usd": {
+          "internal_vs_expected_sd": 55918947.86,
+          "internal_vs_expected_td": 59883579.5,
+          "external_vs_expected_sd": 74079102.92,
+          "internal_vs_external_sd": 121549375.78
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 50654394.5,
+          "MERIDIAN": 9229185.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 47278890.92,
+          "internal_vs_expected_td": 48006352.13,
+          "external_vs_expected_sd": 8883568.1,
+          "internal_vs_external_sd": 56021920.92
+        },
+        "pnl_error_usd": 71063.23
+      },
+      {
+        "as_of": "2026-03-06",
+        "position_usd": {
+          "internal_vs_expected_sd": 59516557.98,
+          "internal_vs_expected_td": 58788677.0,
+          "external_vs_expected_sd": 6174229.4,
+          "internal_vs_external_sd": 65358484.3
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 49675599.0,
+          "MERIDIAN": 9113078.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 47964345.32,
+          "internal_vs_expected_td": 47234980.27,
+          "external_vs_expected_sd": 1641565.73,
+          "internal_vs_external_sd": 49426123.61
+        },
+        "pnl_error_usd": 260873.99
+      },
+      {
+        "as_of": "2026-03-09",
+        "position_usd": {
+          "internal_vs_expected_sd": 59052387.5,
+          "internal_vs_expected_td": 59231248.34,
+          "external_vs_expected_sd": 105159042.49,
+          "internal_vs_external_sd": 157946156.29
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 49657984.34,
+          "MERIDIAN": 9573264.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 47163907.27,
+          "internal_vs_expected_td": 47334344.87,
+          "external_vs_expected_sd": 18306698.28,
+          "internal_vs_external_sd": 65229731.57
+        },
+        "pnl_error_usd": 133994.88
+      },
+      {
+        "as_of": "2026-03-10",
+        "position_usd": {
+          "internal_vs_expected_sd": 61729635.5,
+          "internal_vs_expected_td": 61603945.1,
+          "external_vs_expected_sd": 12739118.33,
+          "internal_vs_external_sd": 73951430.31
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 49673069.1,
+          "MERIDIAN": 11930876.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 47621371.54,
+          "internal_vs_expected_td": 47496454.54,
+          "external_vs_expected_sd": 5306248.53,
+          "internal_vs_external_sd": 51880373.25
+        },
+        "pnl_error_usd": 135692.18
+      },
+      {
+        "as_of": "2026-03-11",
+        "position_usd": {
+          "internal_vs_expected_sd": 90927568.5,
+          "internal_vs_expected_td": 91004032.5,
+          "external_vs_expected_sd": 42563801.0,
+          "internal_vs_external_sd": 109924838.3
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 49577736.0,
+          "MERIDIAN": 41426296.5
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 47799561.49,
+          "internal_vs_expected_td": 47874603.29,
+          "external_vs_expected_sd": 32493635.17,
+          "internal_vs_external_sd": 31548307.64
+        },
+        "pnl_error_usd": 606449.81
+      },
+      {
+        "as_of": "2026-03-12",
+        "position_usd": {
+          "internal_vs_expected_sd": 90466101.6,
+          "internal_vs_expected_td": 92292663.4,
+          "external_vs_expected_sd": 85886342.74,
+          "internal_vs_external_sd": 164415351.48
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 51412086.4,
+          "MERIDIAN": 40880577.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 48385728.06,
+          "internal_vs_expected_td": 53265849.11,
+          "external_vs_expected_sd": 8652369.47,
+          "internal_vs_external_sd": 55367534.55
+        },
+        "pnl_error_usd": 1148602.42
+      },
+      {
+        "as_of": "2026-03-13",
+        "position_usd": {
+          "internal_vs_expected_sd": 92401555.62,
+          "internal_vs_expected_td": 92401555.62,
+          "external_vs_expected_sd": 10976503.46,
+          "internal_vs_external_sd": 102934767.6
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 51495094.0,
+          "MERIDIAN": 40906461.62
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 53137267.86,
+          "internal_vs_expected_td": 53137267.86,
+          "external_vs_expected_sd": 3948061.78,
+          "internal_vs_external_sd": 55380894.85
+        },
+        "pnl_error_usd": 982315.8
+      },
+      {
+        "as_of": "2026-03-16",
+        "position_usd": {
+          "internal_vs_expected_sd": 92593266.15,
+          "internal_vs_expected_td": 92593266.15,
+          "external_vs_expected_sd": 9388889.47,
+          "internal_vs_external_sd": 101538090.06
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 51582494.4,
+          "MERIDIAN": 41010771.75
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 53031320.98,
+          "internal_vs_expected_td": 53031320.98,
+          "external_vs_expected_sd": 2338830.78,
+          "internal_vs_external_sd": 53685966.97
+        },
+        "pnl_error_usd": 867937.94
+      },
+      {
+        "as_of": "2026-03-17",
+        "position_usd": {
+          "internal_vs_expected_sd": 92469768.62,
+          "internal_vs_expected_td": 92469768.62,
+          "external_vs_expected_sd": 9380739.01,
+          "internal_vs_external_sd": 101406772.35
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 51676736.0,
+          "MERIDIAN": 40793032.62
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 53256842.86,
+          "internal_vs_expected_td": 53256842.86,
+          "external_vs_expected_sd": 2338830.78,
+          "internal_vs_external_sd": 53867988.85
+        },
+        "pnl_error_usd": 1107210.24
+      }
+    ],
+    "recon_on": [
+      {
+        "as_of": "2026-03-02",
+        "position_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 0.0,
+          "internal_vs_external_sd": 0.0
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 0.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 0.0,
+          "internal_vs_external_sd": 0.0
+        },
+        "pnl_error_usd": 0.0
+      },
+      {
+        "as_of": "2026-03-03",
+        "position_usd": {
+          "internal_vs_expected_sd": 1010050.0,
+          "internal_vs_expected_td": 1010050.0,
+          "external_vs_expected_sd": 56680.8,
+          "internal_vs_external_sd": 1066730.8
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 1010050.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 14122.5,
+          "internal_vs_expected_td": 14122.5,
+          "external_vs_expected_sd": 56404.83,
+          "internal_vs_external_sd": 70527.33
+        },
+        "pnl_error_usd": 14122.5
+      },
+      {
+        "as_of": "2026-03-04",
+        "position_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 26376.0,
+          "external_vs_expected_sd": 2525672.86,
+          "internal_vs_external_sd": 2525672.86
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 26376.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 26268.2,
+          "external_vs_expected_sd": 2513688.49,
+          "internal_vs_external_sd": 2513688.49
+        },
+        "pnl_error_usd": 107.8
+      },
+      {
+        "as_of": "2026-03-05",
+        "position_usd": {
+          "internal_vs_expected_sd": 8187025.0,
+          "internal_vs_expected_td": 8187025.0,
+          "external_vs_expected_sd": 72433575.26,
+          "internal_vs_external_sd": 74196325.26
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 8187025.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 27300.0,
+          "internal_vs_expected_td": 27300.0,
+          "external_vs_expected_sd": 7634698.0,
+          "internal_vs_external_sd": 7627158.0
+        },
+        "pnl_error_usd": 27300.0
+      },
+      {
+        "as_of": "2026-03-06",
+        "position_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 4152090.0,
+          "internal_vs_external_sd": 4152090.0
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 0.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 8500.0,
+          "internal_vs_expected_td": 8500.0,
+          "external_vs_expected_sd": 2.17,
+          "internal_vs_external_sd": 8498.33
+        },
+        "pnl_error_usd": 8500.0
+      },
+      {
+        "as_of": "2026-03-09",
+        "position_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 13366.0,
+          "external_vs_expected_sd": 103130742.33,
+          "internal_vs_external_sd": 103130742.33
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 13366.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 13641.8,
+          "external_vs_expected_sd": 16879930.23,
+          "internal_vs_external_sd": 16879930.23
+        },
+        "pnl_error_usd": 275.8
+      },
+      {
+        "as_of": "2026-03-10",
+        "position_usd": {
+          "internal_vs_expected_sd": 5105843.75,
+          "internal_vs_expected_td": 5105843.75,
+          "external_vs_expected_sd": 6774068.22,
+          "internal_vs_external_sd": 11879911.97
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 5105843.75
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 17606.25,
+          "internal_vs_expected_td": 17606.25,
+          "external_vs_expected_sd": 4537724.8,
+          "internal_vs_external_sd": 4555331.05
+        },
+        "pnl_error_usd": 17606.25
+      },
+      {
+        "as_of": "2026-03-11",
+        "position_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 36158801.39,
+          "internal_vs_external_sd": 36158801.39
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 0.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 32429246.75,
+          "internal_vs_external_sd": 32429246.75
+        },
+        "pnl_error_usd": 0.0
+      },
+      {
+        "as_of": "2026-03-12",
+        "position_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 77288461.05,
+          "internal_vs_external_sd": 77288461.05
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 0.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 7067193.97,
+          "internal_vs_external_sd": 7067193.97
+        },
+        "pnl_error_usd": 0.0
+      },
+      {
+        "as_of": "2026-03-13",
+        "position_usd": {
+          "internal_vs_expected_sd": 541171.88,
+          "internal_vs_expected_td": 541171.88,
+          "external_vs_expected_sd": 1624662.0,
+          "internal_vs_external_sd": 2165833.88
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 541171.88
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 1106.25,
+          "internal_vs_expected_td": 1106.25,
+          "external_vs_expected_sd": 1609324.39,
+          "internal_vs_external_sd": 1610430.64
+        },
+        "pnl_error_usd": 1106.25
+      },
+      {
+        "as_of": "2026-03-16",
+        "position_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 0.0,
+          "internal_vs_external_sd": 0.0
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 0.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 14.96,
+          "internal_vs_external_sd": 14.96
+        },
+        "pnl_error_usd": 0.0
+      },
+      {
+        "as_of": "2026-03-17",
+        "position_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 0.0,
+          "internal_vs_external_sd": 0.0
+        },
+        "position_td_usd_by_location": {
+          "NORTHBRIDGE": 0.0,
+          "MERIDIAN": 0.0
+        },
+        "cash_usd": {
+          "internal_vs_expected_sd": 0.0,
+          "internal_vs_expected_td": 0.0,
+          "external_vs_expected_sd": 14.96,
+          "internal_vs_external_sd": 14.96
+        },
+        "pnl_error_usd": 0.0
+      }
+    ]
+  },
+  "material_incident": {
+    "recon_off": {
+      "incident": "MATERIAL: fat-finger 10x face on SYNT-4.25-2031 (5,000,000 booked as 50,000,000)",
+      "instrument_id": "SYNT-4.25-2031",
+      "venue": "BONDHUB",
+      "fill_id": "BHT0000355",
+      "true_quantity": 5000000.0,
+      "booked_quantity": 50000000.0,
+      "trade_ts": "2026-03-04T15:52:26+00:00",
+      "observable_at": "2026-03-04T15:52:26+00:00",
+      "detected_at": null,
+      "detected_as": null,
+      "closed_at": null,
+      "detection_latency_min": null,
+      "daily": [
+        {
+          "as_of": "2026-03-02",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-03",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-04",
+          "position_error_td": -45000000.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": -137811.32
+        },
+        {
+          "as_of": "2026-03-05",
+          "position_error_td": -45000000.0,
+          "position_error_sd": -45000000.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 45468201.95,
+          "pnl_error_usd": -25419.47
+        },
+        {
+          "as_of": "2026-03-06",
+          "position_error_td": -45000000.0,
+          "position_error_sd": -45000000.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 45468201.95,
+          "pnl_error_usd": 107222.38
+        },
+        {
+          "as_of": "2026-03-09",
+          "position_error_td": -45000000.0,
+          "position_error_sd": -45000000.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 45468201.95,
+          "pnl_error_usd": -56902.06
+        },
+        {
+          "as_of": "2026-03-10",
+          "position_error_td": -45000000.0,
+          "position_error_sd": -45000000.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 45468201.95,
+          "pnl_error_usd": 17014.79
+        },
+        {
+          "as_of": "2026-03-11",
+          "position_error_td": -45000000.0,
+          "position_error_sd": -45000000.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 45468201.95,
+          "pnl_error_usd": 111406.65
+        },
+        {
+          "as_of": "2026-03-12",
+          "position_error_td": -45000000.0,
+          "position_error_sd": -45000000.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 45468201.95,
+          "pnl_error_usd": 100273.5
+        },
+        {
+          "as_of": "2026-03-13",
+          "position_error_td": -45000000.0,
+          "position_error_sd": -45000000.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 45468201.95,
+          "pnl_error_usd": 42790.35
+        },
+        {
+          "as_of": "2026-03-16",
+          "position_error_td": -45000000.0,
+          "position_error_sd": -45000000.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 45468201.95,
+          "pnl_error_usd": -89609.1
+        },
+        {
+          "as_of": "2026-03-17",
+          "position_error_td": -45000000.0,
+          "position_error_sd": -45000000.0,
+          "cash_error_td": 45468201.95,
+          "cash_error_sd": 45468201.95,
+          "pnl_error_usd": -233492.25
+        }
+      ]
+    },
+    "recon_on": {
+      "incident": "MATERIAL: fat-finger 10x face on SYNT-4.25-2031 (5,000,000 booked as 50,000,000)",
+      "instrument_id": "SYNT-4.25-2031",
+      "venue": "BONDHUB",
+      "fill_id": "BHT0000355",
+      "true_quantity": 5000000.0,
+      "booked_quantity": 50000000.0,
+      "trade_ts": "2026-03-04T15:52:26+00:00",
+      "observable_at": "2026-03-04T15:52:26+00:00",
+      "detected_at": "2026-03-04T16:15:00+00:00",
+      "detected_as": "QUANTITY_MISMATCH",
+      "closed_at": "2026-03-04T17:36:00+00:00",
+      "detection_latency_min": 22.6,
+      "daily": [
+        {
+          "as_of": "2026-03-02",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-03",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-04",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-05",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-06",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-09",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-10",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-11",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-12",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-13",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-16",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        },
+        {
+          "as_of": "2026-03-17",
+          "position_error_td": 0.0,
+          "position_error_sd": 0.0,
+          "cash_error_td": 0.0,
+          "cash_error_sd": 0.0,
+          "pnl_error_usd": 0.0
+        }
+      ]
+    }
+  }
+}
